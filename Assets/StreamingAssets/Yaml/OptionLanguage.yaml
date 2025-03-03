@@ -1,0 +1,177 @@
+Packs:
+- Id: PackId1
+  Label:
+    CH: 聊工作
+    EN: Talk about work.
+    JP: 仕事の話をする
+- Id: PackId2
+  Label:
+    CH: 聊寵物
+    EN: Talk about pets.
+    JP: ペットの話をする
+- Id: PackId3
+  Label:
+    CH: 喝
+    EN: Drink.
+    JP: 飲む
+- Id: PackId4
+  Label:
+    CH: 不喝
+    EN: Don't drink.
+    JP: 飲まない
+- Id: PackId5
+  Label:
+    CH: 拐彎抹角
+    EN: Beat around the bush.
+    JP: 遠回しに言う
+- Id: PackId6
+  Label:
+    CH: 直話直說
+    EN: Be direct.
+    JP: はっきり言う
+
+
+- Id: PackId501
+  Label:
+    CH: 系統設置
+    EN: System
+    JP: システム設定
+
+- Id: PackId502
+  Label:
+     CH: 對話音量
+     EN: Voice Volume
+     JP: ボイス音量
+
+- Id: PackId503
+  Label:
+     CH: 音效音量
+     EN: SFX Volume
+     JP: SE音量
+
+- Id: PackId504
+  Label:
+     CH: 背景音量
+     EN: BGM Volume
+     JP: BGM音量
+
+- Id: PackId505
+  Label:
+     CH: 語言設定
+     EN: Languege
+     JP: 言語設定
+
+- Id: PackId506
+  Label:
+    CH: 恢復預設
+    EN: Restore
+    JP: リセット
+
+- Id: PackId507
+  Label:
+    CH: 保存設定
+    EN: Save
+    JP: 保存
+
+- Id: PackId508
+  Label:
+     CH: 日文
+     EN: JP
+     JP: 日文語
+
+- Id: PackId509
+  Label:
+     CH: 英文
+     EN: EN
+     JP: 英語
+
+- Id: PackId510
+  Label:
+     CH: 繁體中文
+     EN: CN
+     JP: 中國語
+
+- Id: PackId511
+  Label:
+    CH: 章節選擇
+    EN: Chapter
+    JP: チャプター
+
+- Id: PackId512
+  Label:
+    CH: 返回大廳
+    EN: Return
+    JP: ロビー
+
+- Id: PackId513
+  Label:
+    CH: 確定離開
+    EN: SURE
+    JP: もちろん
+
+- Id: PackId514
+  Label:
+    CH: 返回色色
+    EN: BACK
+    JP: 戻る
+
+- Id: PackId515
+  Label:
+    CH: 您確定要離開宿舍？
+    EN: Do you really want to leave?
+    JP: 本当に離れますか？
+
+- Id: PackId516
+  Label:
+    CH: 您確定要返回大廳？
+    EN: Do you really want to back to Lobby?
+    JP: 本当にロビーに戻りますか?
+
+- Id: PackId601
+  Label:
+     CH: text_start_tw
+     EN: text_start_en
+     JP: text_start_jp
+
+- Id: PackId602
+  Label:
+     CH: text_gallery_tw
+     EN: text_gallery_en
+     JP: text_gallery_jp
+
+- Id: PackId603
+  Label:
+     CH: text_chapter_tw
+     EN: text_chapter_en
+     JP: text_chapter_jp
+
+- Id: PackId604
+  Label:
+     CH: text_setting_tw
+     EN: text_setting_en
+     JP: text_setting_jp
+
+- Id: PackId605
+  Label:
+     CH: test_quit_tw
+     EN: test_quit_en
+     JP: test_quit_jp
+
+- Id: PackId606
+  Label:
+     CH: text_ques_tw
+     EN: text_ques_en
+     JP: text_ques_jp
+
+- Id: PackId607
+  Label:
+     CH: text_gameover_title_tw
+     EN: text_gameover_title_en
+     JP: text_gameover_title_en
+
+- Id: PackId608
+  Label:
+     CH: text_gameover_tw
+     EN: text_gameover_en
+     JP: text_gameover_jp
+

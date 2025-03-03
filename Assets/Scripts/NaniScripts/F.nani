@@ -1,0 +1,118 @@
+#F-1
+@streamingPlay "F-1"
+@speedButtonEnable
+@videoControll StartLoopTime:0 EndLoopTime:10 isLooping:false
+@forcedChoice choiceTime:3
+@waitMovie choiceTime:3
+@EndMovie
+@goto .F-1-Q
+#F-1-Q
+@streamingPlay "F-1-Q"
+@videoControll StartLoopTime:0 EndLoopTime:10 isLooping:true
+@forcedChoice choiceTime:3
+@waitMovie choiceTime:3
+@speedButtonDisable
+@choiceDLC PackId1 button:AvDisableChoiceButton handler:AvDisableButtonList goto:.F-1-1
+@choiceDLC PackId2 button:AvButton handler:AvDisableButtonList goto:.F-1-2
+@reBuildChoice
+@stop
+#F-1-2
+@streamingPlay "F-1-2"
+@speedButtonEnable
+@videoControll StartLoopTime:0 EndLoopTime:10 isLooping:false
+@forcedChoice choiceTime:3
+@waitMovie choiceTime:3
+@EndMovie
+@goto .F-2
+#F-2
+@streamingPlay "F-2"
+@speedButtonEnable
+@videoControll StartLoopTime:0 EndLoopTime:10 isLooping:false
+@forcedChoice choiceTime:3
+@waitMovie choiceTime:3
+@EndMovie
+@goto .F-2-Q
+#F-2-Q
+@streamingPlay "F-2-Q"
+@videoControll StartLoopTime:0 EndLoopTime:10 isLooping:true
+@forcedChoice choiceTime:3
+@waitMovie choiceTime:3
+@speedButtonDisable
+@choiceDLC PackId3 button:AvDisableChoiceButton handler:AvDisableButtonList goto:.F-2-1
+@choiceDLC PackId4 button:AvButton handler:AvDisableButtonList goto:.F-2-2
+@reBuildChoice
+@stop
+#F-2-2
+@streamingPlay "F-2-2"
+@speedButtonEnable
+@videoControll StartLoopTime:0 EndLoopTime:10 isLooping:false
+@forcedChoice choiceTime:3
+@waitMovie choiceTime:3
+@EndMovie
+@goto .F-3
+#F-3
+@streamingPlay "F-3"
+@speedButtonEnable
+@videoControll StartLoopTime:0 EndLoopTime:10 isLooping:false
+@forcedChoice choiceTime:3
+@waitMovie choiceTime:3
+@EndMovie
+@goto .F-3-Q
+#F-3-Q
+@streamingPlay "F-3-Q"
+@videoControll StartLoopTime:0 EndLoopTime:8 isLooping:true
+@forcedChoice choiceTime:4
+@waitMovie choiceTime:4
+@speedButtonDisable
+@choiceDLC PackId3 button:AvButton handler:AvDisableButtonList goto:.F-3-2
+@choiceDLC PackId4 button:AvDisableChoiceButton handler:AvDisableButtonList goto:.F-3-1
+@reBuildChoice
+@stop
+#F-3-2
+@streamingPlay "F-3-2"
+@speedButtonEnable
+@videoControll StartLoopTime:0 EndLoopTime:10 isLooping:false
+@forcedChoice choiceTime:3
+@waitMovie choiceTime:3
+@EndMovie
+@goto .F-4-2
+#F-4-2
+@streamingPlay "F-4-2"
+@speedButtonEnable
+@videoControll StartLoopTime:0 EndLoopTime:10 isLooping:false
+@forcedChoice choiceTime:3
+@waitMovie choiceTime:3
+@EndMovie
+@goto .F-4-2-Q
+#F-4-2-Q
+@streamingPlay "F-4-2-Q"
+@videoControll StartLoopTime:0 EndLoopTime:9 isLooping:true
+@forcedChoice choiceTime:3
+@waitMovie choiceTime:3
+@speedButtonDisable
+@spawn LovePlayPage
+@spawnLovePlayPage poseName:sex_I_01,sex_S_01,sex_J_01,sex_Q_01 label:F-4-2-O1,Test,Test,Test cumLabel:F-4-2-Q-C1 type:demoForPlay LabelCompany:sex_I_02,sex_S_02,sex_K_02,sex_Q_02
+@videoControll StartLoopTime:0 EndLoopTime:8 isLooping:true
+@stop
+#F-4-2-O1
+@streamingPlay "F-4-2-O1"
+@videoControll StartLoopTime:0 EndLoopTime:10 isLooping:false
+@forcedChoice choiceTime:3
+@waitMovie choiceTime:3
+@EndMovie
+#F-4-2-Q-C1
+@spawn LovePlayPage
+@spawnLovePlayPage poseName:sex_D_01,sex_A_01,sex_C_01,sex_G_01,sex_F_01 label:F-4-2-S1,Test,Test,Test,Test cumLabel:S-2-S6 type:demo LabelCompany:sex_A_02,sex_F_02,sex_G_02,sex_E_02,sex_T_02
+@stop
+#F-4-2-S1
+@streamingPlay "F-4-2-S1"
+@videoControll StartLoopTime:0 EndLoopTime:10 isLooping:false
+@forcedChoice choiceTime:3
+@waitMovie choiceTime:3
+@EndMovie
+@goto .F-4-2-S1-Q
+#F-4-2-S1-Q
+@speedButtonDisable
+@streamingPlay "F-4-2-S1-Q"
+@videoControll StartLoopTime:0 EndLoopTime:8 isLooping:true
+@stop
