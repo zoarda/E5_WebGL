@@ -369,7 +369,7 @@ public class SubtitlesManager : MonoBehaviour
         if (index != -1)
         {
             ObjChatBG.SetActive(true);
-            ObjNameBG.SetActive(true);
+            // ObjNameBG.SetActive(true);
             var subtitle = subtitles[index];
             string name = subtitle.name;
             string text = subtitle.text;
@@ -382,7 +382,7 @@ public class SubtitlesManager : MonoBehaviour
         else
         {
             ObjChatBG.SetActive(false);
-            ObjNameBG.SetActive(false);
+            // ObjNameBG.SetActive(false);
             subtitlesText.text = "";
             NameText.text = "";
         }

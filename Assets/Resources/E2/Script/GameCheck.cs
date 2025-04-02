@@ -30,7 +30,7 @@ public class GameCheck : MonoBehaviour
             startNani.VideoImage.GetComponent<CanvasGroup>().alpha = 0;
 
             SubtitlesManager.Instance.ObjChatBG.SetActive(false);
-            SubtitlesManager.Instance.ObjNameBG.SetActive(false);
+            // SubtitlesManager.Instance.ObjNameBG.SetActive(false);
         });
         Gameback.onClick.AddListener(async () =>
         {

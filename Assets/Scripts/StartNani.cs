@@ -149,16 +149,6 @@ public class StartNani : MonoBehaviour
     }
     async void Init()
     {
-        // var urlData = ServerManager.Instance.urlData;
-        // if (!string.IsNullOrEmpty(urlData.token) && !string.IsNullOrEmpty(urlData.language))
-        // {
-        //     Debug.Log($"Token: {urlData.token}, Language: {urlData.language}");
-        // }
-        // else
-        // {
-        //     Debug.LogError("Failed to retrieve URL data.");
-        // }
-        // string absoluteURL = Application.absoluteURL;
 
         //初始化nani
         await RuntimeInitializer.InitializeAsync();
@@ -172,14 +162,6 @@ public class StartNani : MonoBehaviour
         }
         if (!camera.UICamera.gameObject.TryGetComponent(out AspectRatioControl arc2))
             camera.UICamera.gameObject.AddComponent<AspectRatioControl>();
-        //尋找存檔紀錄
-        // SaveData saveData = await YamlLoader.LoadYaml<SaveData>(Application.persistentDataPath + "/SaveData.yaml");
-        // ServerManager.SaveData saveData = await ServerManager.Instance.Load();
-        // saveData.friendship = allFriendship();
-        // 將設置好的友誼值存入Manager變數
-        // var varManager = Engine.GetService<ICustomVariableManager>();
-        // varManager.TrySetVariableValue("friendship", saveData.friendship);
-        // friednshipList.Add(saveData.friendship);
         //初始化語言 並設置語言
         await LanguageManager.Init();
         var Player = Engine.GetService<IScriptPlayer>();
@@ -190,6 +172,7 @@ public class StartNani : MonoBehaviour
         await VideoManager.Instance.InitVideoControll();
         //設定初始選擇按鈕(給遙控器用)
         // EventSystem.current.SetSelectedGameObject(Btn_StartGame.gameObject);
+        
         //設定影片控制顯示
         buttonController.onClick.AddListener(() =>
         {
@@ -204,73 +187,6 @@ public class StartNani : MonoBehaviour
             }
         });
 
-        // //動態生成語言選擇按鈕
-        // foreach (var data in Language)
-        // {
-        //     var toggle = Instantiate(PreLanguageToggle, LanguageToggleGroup.transform);
-        //     Text text = toggle.GetComponentInChildren<Text>();
-        //     if (data.Contains("中文"))
-        //     {
-        //         toggle.GetComponent<Toggle>().isOn = true;
-        //         text.AddComponent<LangugeText>().Id = "PackId90";
-        //     }
-        //     if (data.Contains("日文"))
-        //     {
-        //         text.AddComponent<LangugeText>().Id = "PackId88";
-        //     }
-        //     if (data.Contains("英文"))
-        //     {
-        //         text.AddComponent<LangugeText>().Id = "PackId89";
-        //     }
-        //     toggle.GetComponent<Image>().enabled = false;
-        //     toggle.GetComponent<Toggle>().group = LanguageToggleGroup;
-        //     toggle.transform.SetAsFirstSibling();
-        //     toggle.GetComponent<Toggle>().onValueChanged.AddListener(async (value) =>
-        //     {
-        //         if (value)
-        //         {
-        //             if (data.Contains("中文"))
-        //                 subtitlesManager.LanguageCase = SubtitlesManager.Language.中文;
-        //             else if (data.Contains("日文"))
-        //                 subtitlesManager.LanguageCase = SubtitlesManager.Language.日文;
-        //             else if (data.Contains("英文"))
-        //                 subtitlesManager.LanguageCase = SubtitlesManager.Language.英文;
-        //         }
-        //         await subtitlesManager.LoadSubtitles();
-        //         LanguageManager.SetLanguage();
-        //     });
-        //     LanguageManager.languageTexts.Add(toggle.GetComponentInChildren<Text>());
-        //     LanguageManager.SetLanguage();
-        //     toggles.Add(toggle.GetComponent<Toggle>());
-        // }
-        // ConfigureToggleNavigation();
-        //開始頁面畫廊
-        // Btn_Artist.onClick.AddListener(() =>
-        // {
-        //     GalleryPage.SetActive(!GalleryPage.activeSelf);
-        // });
-        //開始頁面選項
-        // Btn_StartSelect.onClick.AddListener(() =>
-        // {
-        //     // StartGamePage.SetActive(!StartGamePage.activeSelf);
-        //     SelectOption.SetActive(!SelectOption.activeSelf);
-        //     // EventSystem.current.SetSelectedGameObject(Btn_C1_VB.gameObject);
-        // });
-        // //開始遊戲
-        // Btn_StartGame.onClick.AddListener(async () =>
-        // {
-        //     // AudioManager.instance.PlaySFX("Up");
-        //     // OpenPage.SetActive(true);
-        //     CanvasGroup canvasGroup = VideoImage.GetComponent<CanvasGroup>();
-        //     canvasGroup.alpha = 1;
-        //     // StartGamePage.SetActive(!StartGamePage.activeSelf);
-        //     LobbyPage.SetActive(!LobbyPage.activeSelf);
-        //     await Player.PreloadAndPlayAsync("S");
-        //     ICharacterManager actorManager = Engine.GetService<ICharacterManager>();
-        //     actorManager.RemoveAllActors();
-        //     NaniCommandManger.Instance.SpeedButtonClearSpawn();
-        //     EventSystem.current.SetSelectedGameObject(Btn_Option.gameObject);
-        // });
         //快退
         Btn_SpeedViewBack.onClick.AddListener(() =>
         {
@@ -308,22 +224,10 @@ public class StartNani : MonoBehaviour
 
             Debug.Log($"视频成功快退到时间点: {targetTime:F2}s");
         });
-        //播放暫停
-        // Btn_PlayPause.onValueChanged.AddListener((value) =>
-        // {
-        //     videoPlayer = GameObject.Find("VideoBackground").GetComponentInChildren<VideoPlayer>();
-        //     if (value)
-        //         videoPlayer.Pause();
-        //     else
-        //         videoPlayer.Play();
-        // });
+
         //選項視窗
         Btn_Option.onClick.AddListener(async () =>
         {
-            // videoPlayer = GameObject.Find("VideoBackground").GetComponentInChildren<VideoPlayer>();
-            // VideoPlayer videoPlayer = VideoManager.Instance.GetVideoPlayer();
-            // if (videoPlayer.isPlaying)
-            // videoPlayer.Pause();
             await WebGLStreamController.Instance.PlayPause();
             OptionPage.SetActive(!OptionPage.activeSelf);
             InGameSettingPage inGameSettingPage = InGameSettingPage.Instance;
@@ -341,35 +245,6 @@ public class StartNani : MonoBehaviour
             LayoutRebuilder.ForceRebuildLayoutImmediate(OptionPage.GetComponent<RectTransform>());
             // EventSystem.current.SetSelectedGameObject(Btn_OptionReturn.gameObject);
         });
-        //遊戲確認
-        // Btn_OK.onClick.AddListener(() =>
-        // {
-        //     if (Application.platform == RuntimePlatform.WebGLPlayer)
-        //     {
-        //         // Debug.Log("shrimp: ready to SendMessage");
-        //         // // Example 1: 發送 'send:message' 事件
-        //         // SendMessageToParent("open");
-
-        //         // Example 2: 發送 'openurl' 事件
-        //         Debug.Log("shrimp: back");
-        //         Back();
-
-        //         // // Example 3: 發送 'reload' 事件
-        //         // ReloadPage();
-        //         // Debug.Log("shrimp: SendMessage succese");
-        //     }
-        //     else
-        //     {
-        //         Application.Quit();
-        //     }
-        // });
-        //遊戲取消
-        // Btn_No.onClick.AddListener(() =>
-        // {
-        //     CheckPage.SetActive(!CheckPage.activeSelf);
-        //     EventSystem.current.SetSelectedGameObject(Btn_EndGamestart.gameObject);
-        // });
-        //遊戲內確認
         Btn_InGameOK.onClick.AddListener(async () =>
         {
             var Player = Engine.GetService<IScriptPlayer>();
@@ -394,155 +269,19 @@ public class StartNani : MonoBehaviour
             InGameCheckPage.SetActive(!InGameCheckPage.activeSelf);
             EventSystem.current.SetSelectedGameObject(Btn_OptionReturn.gameObject);
         });
-        // 選項視窗
-        // Btn_SelectOption.onClick.AddListener(async () =>
-        // {
-        //     // videoPlayer = GameObject.Find("VideoBackground").GetComponentInChildren<VideoPlayer>();
-        //     // VideoPlayer videoPlayer = VideoManager.Instance.GetVideoPlayer();
-        //     // videoPlayer.Pause();
-        //     if (webGLStreamController == null)
-        //     {
-        //         webGLStreamController = WebGLStreamController.Instance;
-        //     }
-        //     await webGLStreamController.PlayPause();
-        //     SelectOption.SetActive(!SelectOption.activeSelf);
-        //     var spawneObjects = Engine.GetService<ISpawnManager>().GetAllSpawned();
-        //     var lovePlayPageObject = spawneObjects.FirstOrDefault(i => i.Path == "LovePlayPage");
-        //     if (lovePlayPageObject != null && lovePlayPageObject.GameObject.activeInHierarchy == false)
-        //     {
-        //         // lovePlayPageObject.GameObject.SetActive(true);
-        //         // buttonController.gameObject.SetActive(!buttonController.gameObject.activeSelf);
-
-        //         // foreach (var image in BG.GetComponentsInChildren<Image>())
-        //         // {
-        //         //     image.enabled = !image.enabled;
-        //         // }
-        //         // foreach (var text in BG.GetComponentsInChildren<Text>())
-        //         // {
-        //         //     text.enabled = !text.enabled;
-        //         // }
-        //     }
-        //     buttonController.gameObject.SetActive(!buttonController.gameObject.activeSelf);
-        //     if (webGLStreamController == null)
-        //     {
-        //         webGLStreamController = WebGLStreamController.Instance;
-        //     }
-        //     if (!Btn_PlayPause.isOn)
-        //         await webGLStreamController.PlayVideo();
-        //     OptionPage.SetActive(!OptionPage.activeSelf);
-        //     InGameSettingPage inGameSettingPage = InGameSettingPage.Instance;
-        //     inGameSettingPage.Init();
-        //     foreach (var image in BG.GetComponentsInChildren<Image>())
-        //     {
-        //         image.enabled = !image.enabled;
-        //     }
-        //     foreach (var text in BG.GetComponentsInChildren<Text>())
-        //     {
-        //         text.enabled = !text.enabled;
-        //     }
-        //     CheckPage.SetActive(false);
-        //     // EventSystem.current.SetSelectedGameObject(Btn_C1_VB.gameObject);
-        // });
+        
         Btn_ArtistReturn.onClick.AddListener(() =>
         {
             GalleryPage.SetActive(!GalleryPage.activeSelf);
         });
-        //結束遊戲
-        // Btn_EndGame.onClick.AddListener(async () =>
-        // {
-        //     // Application.Quit();
-        //     // videoPlayer = GameObject.Find("VideoBackground").GetComponentInChildren<VideoPlayer>();
-        //     // VideoPlayer videoPlayer = VideoManager.Instance.GetVideoPlayer();
-        //     // videoPlayer.Pause();
-        //     if (webGLStreamController == null)
-        //     {
-        //         webGLStreamController = WebGLStreamController.Instance;
-        //     }
-        //     await webGLStreamController.PlayPause();
-        //     InGameCheckPage.SetActive(!InGameCheckPage.activeSelf);
-        //     EventSystem.current.SetSelectedGameObject(Btn_OK.gameObject);
-        // });
-        //開啟語言選擇視窗
-        // Btn_Language.onClick.AddListener(async () =>
-        // {
-        //     // videoPlayer = GameObject.Find("VideoBackground").GetComponentInChildren<VideoPlayer>();
-        //     // VideoPlayer videoPlayer = VideoManager.Instance.GetVideoPlayer();
-        //     // videoPlayer.Pause();
-        //     if (webGLStreamController == null)
-        //     {
-        //         webGLStreamController = WebGLStreamController.Instance;
-        //     }
-        //     await webGLStreamController.PlayPause();
-        //     LanguageToggleGroup.gameObject.SetActive(!LanguageToggleGroup.gameObject.activeSelf);
-        //     LayoutRebuilder.ForceRebuildLayoutImmediate(LanguageToggle.GetComponent<RectTransform>());
-
-        //     foreach (var image in LanguageToggleGroup.GetComponentsInChildren<Image>())
-        //     {
-        //         image.enabled = !image.enabled;
-        //     }
-        //     foreach (var text in LanguageToggleGroup.GetComponentsInChildren<Text>())
-        //     {
-        //         text.enabled = !text.enabled;
-        //     }
-        //     OptionPage.SetActive(!OptionPage.activeSelf);
-        //     InGameSettingPage inGameSettingPage = InGameSettingPage.Instance;
-        //     inGameSettingPage.Init();
-        //     EventSystem.current.SetSelectedGameObject(Btn_LanguageReturn.gameObject);
-        // });
-        //遊戲設定
-        // Btn_GameSetting.onClick.AddListener(() =>
-        // {
-        //     GameSettingPage.SetActive(!GameSettingPage.activeSelf);
-        //     EventSystem.current.SetSelectedGameObject(Btn_OptionReturn.gameObject);
-        // });
+        
         //章節選擇視窗關閉
         Btn_Return.onClick.AddListener(() =>
         {
             SelectOption.SetActive(!SelectOption.activeSelf);
             EventSystem.current.SetSelectedGameObject(Btn_SelectOption.gameObject);
         });
-        //選項視窗關閉
-        // Btn_OptionReturn.onClick.AddListener(async () =>
-        // {
-        //     StartNani startNani = GameObject.Find("StartNani").GetComponent<StartNani>();
-        //     var spawneObjects = Engine.GetService<ISpawnManager>().GetAllSpawned();
-        //     var lovePlayPageObject = spawneObjects.FirstOrDefault(i => i.Path == "LovePlayPage");
-        //     if (lovePlayPageObject != null && lovePlayPageObject.GameObject.activeInHierarchy == false)
-        //     {
-        //         lovePlayPageObject.GameObject.SetActive(true);
-        //         startNani.buttonController.gameObject.SetActive(!startNani.buttonController.gameObject.activeSelf);
-
-        //         foreach (var image in BG.GetComponentsInChildren<Image>())
-        //         {
-        //             image.enabled = !image.enabled;
-        //         }
-        //         foreach (var text in BG.GetComponentsInChildren<Text>())
-        //         {
-        //             text.enabled = !text.enabled;
-        //         }
-        //     }
-        //     startNani.buttonController.gameObject.SetActive(!startNani.buttonController.gameObject.activeSelf);
-        //     if (webGLStreamController == null)
-        //     {
-        //         webGLStreamController = WebGLStreamController.Instance;
-        //     }
-        //     if (!Btn_PlayPause.isOn)
-        //         await webGLStreamController.PlayVideo();
-        //     OptionPage.SetActive(!OptionPage.activeSelf);
-        //     InGameSettingPage inGameSettingPage = InGameSettingPage.Instance;
-        //     inGameSettingPage.Init();
-        //     foreach (var image in BG.GetComponentsInChildren<Image>())
-        //     {
-        //         image.enabled = !image.enabled;
-        //     }
-        //     foreach (var text in BG.GetComponentsInChildren<Text>())
-        //     {
-        //         text.enabled = !text.enabled;
-        //     }
-        //     CheckPage.SetActive(false);
-        //     EventSystem.current.SetSelectedGameObject(Btn_Option.gameObject);
-
-        // });
+       
         //語言選擇視窗關閉
         Btn_LanguageReturn.onClick.AddListener(() =>
         {
@@ -564,97 +303,12 @@ public class StartNani : MonoBehaviour
             LayoutRebuilder.ForceRebuildLayoutImmediate(OptionPage.GetComponent<RectTransform>());
             EventSystem.current.SetSelectedGameObject(Btn_Language.gameObject);
         });
-        // //選擇選項
-        // Btn_C1_VB.onClick.AddListener(() =>
-        // {
-        //     ChapterPage.SetActive(true);
-        //     var chapter = ChapterPage.GetComponent<ChapterPage>();
-        //     chapter.C1.SetActive(true);
-        //     chapter.UpdateChapterPage();
-        //     // if (isProcessing) return;
-        //     // isProcessing = true;
-        //     // StartGamePage.SetActive(false);
-        //     // CheckSelectOption();
-
-        //     // await PlayVideoAsync("C1_VB", "C1_S0", Btn_Option.gameObject);
-        // });
-        // Btn_C2_VB.onClick.AddListener(() =>
-        // {
-        //     ChapterPage.SetActive(true);
-        //     var chapter = ChapterPage.GetComponent<ChapterPage>();
-        //     chapter.C2.SetActive(true);
-        //     chapter.UpdateChapterPage();
-        //     // if (isProcessing) return;
-        //     // isProcessing = true;
-        //     // StartGamePage.SetActive(false);
-        //     // CheckSelectOption();
-
-        //     // await PlayVideoAsync("C2_VB", "C2_S0", Btn_Option.gameObject);
-        // });
-        // Btn_C3_VB.onClick.AddListener(() =>
-        // {
-        //     ChapterPage.SetActive(true);
-        //     var chapter = ChapterPage.GetComponent<ChapterPage>();
-        //     chapter.C3.SetActive(true);
-        //     chapter.UpdateChapterPage();
-        //     // if (isProcessing) return;
-        //     // isProcessing = true;
-        //     // StartGamePage.SetActive(false);
-        //     // CheckSelectOption();
-
-        //     // await PlayVideoAsync("C3_VB", "C3_S0", Btn_Option.gameObject);
-        // });
-        // Btn_C4_VB.onClick.AddListener(() =>
-        // {
-        //     ChapterPage.SetActive(true);
-        //     var chapter = ChapterPage.GetComponent<ChapterPage>();
-        //     chapter.C4.SetActive(true);
-        //     chapter.UpdateChapterPage();
-        //     // if (isProcessing) return;
-        //     // isProcessing = true;
-        //     // StartGamePage.SetActive(false);
-        //     // CheckSelectOption();
-
-        //     // await PlayVideoAsync("C4_VB", "C4_S0", Btn_Option.gameObject);
-        // });
-        // Btn_C5_VB.onClick.AddListener(() =>
-        // {
-        //     ChapterPage.SetActive(true);
-        //     var chapter = ChapterPage.GetComponent<ChapterPage>();
-        //     chapter.C5.SetActive(true);
-        //     chapter.UpdateChapterPage();
-        //     // if (isProcessing) return;
-        //     // isProcessing = true;
-        //     // StartGamePage.SetActive(false);
-        //     // CheckSelectOption();
-
-        //     // await PlayVideoAsync("C5_VB", "C5_S0", Btn_Option.gameObject);
-        // });
-
-
-        // async UniTask PlayVideoAsync(string naniScript, string videoName, GameObject gameObject)
-        // {
-        //     await Player.PreloadAndPlayAsync($"{naniScript}");
-        //     // CheckSelectOption();
-        //     videoPlayer = GameObject.Find($"{videoName}").GetComponent<VideoPlayer>();
-        //     videoPlayer.time = videoPlayer.length - choiceTime - 2;
-        //     lastChoiceName = videoPlayer.clip.name;
-        //     ICharacterManager actorManager = Engine.GetService<ICharacterManager>();
-        //     actorManager.RemoveAllActors();
-        //     NaniCommandManger.Instance.isLooping = false;
-        //     EventSystem.current.SetSelectedGameObject(gameObject);
-        //     isProcessing = false;
-        // }
+       
     }
     public async UniTask PlayVideoAsync(string naniScript, string ButtonLable)
     {
         var player = Engine.GetService<IScriptPlayer>();
         await player.PreloadAndPlayAsync(naniScript, ButtonLable);
-        // CheckSelectOption();
-        // VideoPlayer videoPlayer = GameObject.Find($"{ButtonLable}").GetComponent<VideoPlayer>();
-
-        // videoPlayer.time = videoPlayer.length - choiceTime - 2;
-        // lastChoiceName = videoPlayer.clip.name;
         ICharacterManager actorManager = Engine.GetService<ICharacterManager>();
         actorManager.RemoveAllActors();
         NaniCommandManger.Instance.isLooping = false;
@@ -671,14 +325,7 @@ public class StartNani : MonoBehaviour
         inGameSettingPage.Init();
         Debug.Log("setFalse");
     }
-    // public void OpenOption()
-    // {
-    //     // StartGamePage.SetActive(!StartGamePage.activeSelf);
-    //     // SelectOption.SetActive(!SelectOption.activeSelf);
-    //     ChapterPage.SetActive(!ChapterPage.activeSelf);
-    //     // OptionPage.SetActive(false);
-    //     Debug.Log("setFalse");
-    // }
+   
     //新增友誼值
     public void SetfriendshipList(float intFriend)
     {
@@ -697,55 +344,7 @@ public class StartNani : MonoBehaviour
         // Debug.Log("allFriendship:" + sum);
         return sum;
     }
-    //選擇章節顯示切換
-    // public async UniTask SelectOptionSwtich(ServerManager.SaveData saveData)
-    // {
-    //     // SaveData saveData = await YamlLoader.LoadYaml<SaveData>(Application.persistentDataPath + "/SaveData.yaml");
-    //     // SaveData saveData = new SaveData();
-    //     // string? token = await ServerManager.Instance.Login();
-    //     // if (string.IsNullOrEmpty(token))
-    //     // {
-    //     //     Debug.Log("login in failed");
-    //     // }
-    //     // else
-    //     // {
-    //     //     saveData = await ServerManager.Instance.Load(token);
-    //     // }
-    //     saveData.friendship = allFriendship();
-    //     SelectButton C1 = Btn_C1_VB.GetComponent<SelectButton>();
-    //     SelectButton C2 = Btn_C2_VB.GetComponent<SelectButton>();
-    //     SelectButton C3 = Btn_C3_VB.GetComponent<SelectButton>();
-    //     SelectButton C4 = Btn_C4_VB.GetComponent<SelectButton>();
-    //     SelectButton C5 = Btn_C5_VB.GetComponent<SelectButton>();
-    //     foreach (var data in saveData.scriptName)
-    //     {
-    //         if (data.Contains("C1_VB"))
-    //         {
-    //             Btn_C1_VB.interactable = true;
-    //             C1.Disable.SetActive(false);
-    //         }
-    //         if (data.Contains("C2_VB"))
-    //         {
-    //             Btn_C2_VB.interactable = true;
-    //             C2.Disable.SetActive(false);
-    //         }
-    //         if (data.Contains("C3_VB"))
-    //         {
-    //             Btn_C3_VB.interactable = true;
-    //             C3.Disable.SetActive(false);
-    //         }
-    //         if (data.Contains("C4_VB"))
-    //         {
-    //             Btn_C4_VB.interactable = true;
-    //             C4.Disable.SetActive(false);
-    //         }
-    //         if (data.Contains("C5_VB"))
-    //         {
-    //             Btn_C5_VB.interactable = true;
-    //             C5.Disable.SetActive(false);
-    //         }
-    //     }
-    // }
+   
     //存檔
     public async UniTask SaveYaml(string scriptName)
     {
@@ -764,41 +363,4 @@ public class StartNani : MonoBehaviour
 
         // YamlLoader.SaveYaml(saveData);
     }
-    // //存檔資料
-    // public class SaveData
-    // {
-    //     public float friendship;
-    //     public List<string> scriptName;
-    // }
-
-    // //設定語言選擇按鈕的按鍵設定
-    // void ConfigureToggleNavigation()
-    // {
-    //     for (int i = 0; i < toggles.Count; i++)
-    //     {
-    //         Navigation navigation = new Navigation
-    //         {
-    //             mode = Navigation.Mode.Explicit
-    //         };
-
-    //         if (toggles[i].GetComponentInChildren<Text>().text.Contains("中文"))
-    //         {
-    //             navigation.selectOnRight = Btn_LanguageReturn;
-    //             navigation.selectOnLeft = toggles.Find(t => t.GetComponentInChildren<Text>().text.Contains("日文"));
-    //         }
-    //         else if (toggles[i].GetComponentInChildren<Text>().text.Contains("日文"))
-    //         {
-    //             navigation.selectOnRight = toggles.Find(t => t.GetComponentInChildren<Text>().text.Contains("中文"));
-    //             navigation.selectOnLeft = toggles.Find(t => t.GetComponentInChildren<Text>().text.Contains("英文"));
-    //         }
-    //         else if (toggles[i].GetComponentInChildren<Text>().text.Contains("英文"))
-    //         {
-    //             navigation.selectOnRight = toggles.Find(t => t.GetComponentInChildren<Text>().text.Contains("日文"));
-    //             navigation.selectOnLeft = Btn_LanguageReturn;
-    //         }
-
-    //         toggles[i].navigation = navigation;
-    //     }
-    // }
-
 }

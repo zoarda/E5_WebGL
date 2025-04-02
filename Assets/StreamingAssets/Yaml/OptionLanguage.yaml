@@ -1,35 +1,795 @@
 Packs:
 - Id: PackId1
   Label:
+    CH: 裝熟
+    EN: 
+    JP: 
+
+- Id: PackId2
+  Label:
+    CH: 說實話
+    EN: 
+    JP: 
+
+- Id: PackId3
+  Label:
+    CH: 先喝酒
+    EN: 
+    JP: 
+
+- Id: PackId4
+  Label:
+    CH: 說情話
+    EN: 
+    JP: 
+
+- Id: PackId5
+  Label:
+    CH: 送回她家
+    EN: 
+    JP: 
+
+- Id: PackId6
+  Label:
+    CH: 送回自己家
+    EN: 
+    JP: 
+
+- Id: PackId7
+  Label:
+    CH: 搞笑
+    EN: 
+    JP: 
+
+- Id: PackId8
+  Label:
+    CH: 調侃
+    EN: 
+    JP: 
+
+- Id: PackId9
+  Label:
+    CH: 瞎掰
+    EN: 
+    JP: 
+
+- Id: PackId10
+  Label:
+    CH: 說實話
+    EN: 
+    JP: 
+
+- Id: PackId11
+  Label:
+    CH: 第一張
+    EN: 
+    JP: 
+
+- Id: PackId12
+  Label:
+    CH: 第二張
+    EN: 
+    JP: 
+
+- Id: PackId13
+  Label:
+    CH: 第三張
+    EN: 
+    JP: 
+
+- Id: PackId14
+  Label:
+    CH: 安慰她
+    EN: 
+    JP: 
+
+- Id: PackId15
+  Label:
+    CH: 邀她喝酒
+    EN: 
+    JP: 
+
+- Id: PackId16
+  Label:
+    CH: 幫她找個男人
+    EN: 
+    JP: 
+
+- Id: PackId17
+  Label:
+    CH: 把自己送給她
+    EN: 
+    JP: 
+
+- Id: PackId18
+  Label:
+    CH: 一律建議分手
+    EN: 
+    JP: 
+
+- Id: PackId19
+  Label:
+    CH: 建議好好溝通
+    EN: 
+    JP: 
+
+- Id: PackId20
+  Label:
+    CH: 搭醉漢的腰
+    EN: 
+    JP: 
+
+- Id: PackId21
+  Label:
+    CH: 搭真真的腰
+    EN: 
+    JP: 
+
+- Id: PackId22
+  Label:
+    CH: 說實話
+    EN: 
+    JP: 
+
+- Id: PackId23
+  Label:
+    CH: 說謊
+    EN: 
+    JP: 
+
+- Id: PackId24
+  Label:
+    CH: 幫她披上外套
+    EN: 
+    JP: 
+
+- Id: PackId25
+  Label:
+    CH: 開玩笑
+    EN: 
+    JP: 
+
+- Id: PackId26
+  Label:
     CH: 聊工作
     EN: Talk about work.
     JP: 仕事の話をする
-- Id: PackId2
+
+- Id: PackId27
   Label:
     CH: 聊寵物
     EN: Talk about pets.
     JP: ペットの話をする
-- Id: PackId3
+
+- Id: PackId28
   Label:
     CH: 喝
     EN: Drink.
     JP: 飲む
-- Id: PackId4
+
+- Id: PackId29
   Label:
     CH: 不喝
     EN: Don't drink.
     JP: 飲まない
-- Id: PackId5
+
+- Id: PackId30
   Label:
     CH: 拐彎抹角
     EN: Beat around the bush.
     JP: 遠回しに言う
-- Id: PackId6
+
+- Id: PackId31
   Label:
     CH: 直話直說
     EN: Be direct.
     JP: はっきり言う
 
+- Id: PackId32
+  Label:
+    CH: 妳是沒人要的？
+    EN: 
+    JP: 
+
+- Id: PackId33
+  Label:
+    CH: 怎麼沒跟朋友一起？
+    EN: 
+    JP: 
+
+- Id: PackId34
+  Label:
+    CH: 帶去飯店
+    EN: 
+    JP: 
+
+- Id: PackId35
+  Label:
+    CH: 帶回家
+    EN: 
+    JP: 
+
+- Id: PackId36
+  Label:
+    CH: 打電話給她朋友
+    EN: 
+    JP: 
+
+- Id: PackId37
+  Label:
+    CH: 抱抱她
+    EN: 
+    JP: 
+
+- Id: PackId38
+  Label:
+    CH: 威士忌沙瓦
+    EN: 
+    JP: 
+
+- Id: PackId39
+  Label:
+    CH: 龍舌蘭
+    EN: 
+    JP: 
+
+- Id: PackId40
+  Label:
+    CH: 再拿一塊
+    EN: 
+    JP: 
+
+- Id: PackId41
+  Label:
+    CH: 親上去
+    EN: 
+    JP: 
+
+- Id: PackId42
+  Label:
+    CH: 營造男友感
+    EN: 
+    JP: 
+
+- Id: PackId43
+  Label:
+    CH: 營造自拍感
+    EN: 
+    JP: 
+
+- Id: PackId44
+  Label:
+    CH: 可能昨晚喝多了
+    EN: 
+    JP: 
+
+- Id: PackId45
+  Label:
+    CH: 瞎掰
+    EN: 
+    JP: 
+
+- Id: PackId46
+  Label:
+    CH: 威士忌加冰
+    EN: 
+    JP: 
+
+- Id: PackId47
+  Label:
+    CH: 啤酒
+    EN: 
+    JP: 
+
+- Id: PackId48
+  Label:
+    CH: 提議去吃宵夜
+    EN: 
+    JP: 
+
+- Id: PackId49
+  Label:
+    CH: 說謊
+    EN: 
+    JP: 
+
+- Id: PackId50
+  Label:
+    CH: 炫富
+    EN: 
+    JP: 
+
+- Id: PackId51
+  Label:
+    CH: 賣慘
+    EN: 
+    JP: 
+
+- Id: PackId52
+  Label:
+    CH: 摸胸
+    EN: 
+    JP: 
+
+- Id: PackId53
+  Label:
+    CH: 摸腿
+    EN: 
+    JP: 
+
+- Id: PackId54
+  Label:
+    CH: 帶去廁所
+    EN: 
+    JP: 
+
+- Id: PackId55
+  Label:
+    CH: 直接推倒
+    EN: 
+    JP: 
+
+- Id: PackId56
+  Label:
+    CH: 讓她繼續喝
+    EN: 
+    JP: 
+
+- Id: PackId57
+  Label:
+    CH: 讓她休息一下
+    EN: 
+    JP: 
+
+- Id: PackId58
+  Label:
+    CH: 該補償我了吧
+    EN: 
+    JP: 
+
+- Id: PackId59
+  Label:
+    CH: 今天辛苦了
+    EN: 
+    JP: 
+
+- Id: PackId60
+  Label:
+    CH: 去我家睡
+    EN: 
+    JP: 
+
+- Id: PackId61
+  Label:
+    CH: 陪妳回家
+    EN: 
+    JP: 
+
+- Id: PackId62
+  Label:
+    CH: 下一個會更好
+    EN: 
+    JP: 
+
+- Id: PackId63
+  Label:
+    CH: 把她留下
+    EN: 
+    JP: 
+
+- Id: PackId64
+  Label:
+    CH: 摸胸
+    EN: 
+    JP: 
+
+- Id: PackId65
+  Label:
+    CH: 摸腿
+    EN: 
+    JP: 
+
+- Id: PackId66
+  Label:
+    CH: 摳她手心
+    EN: 
+    JP: 
+
+- Id: PackId67
+  Label:
+    CH: 言語調戲
+    EN: 
+    JP: 
+
+- Id: PackId68
+  Label:
+    CH: 甜言蜜語
+    EN: 
+    JP: 
+
+- Id: PackId69
+  Label:
+    CH: 藉口塘塞
+    EN: 
+    JP: 
+
+- Id: PackId70
+  Label:
+    CH: 讚美她
+    EN: 
+    JP: 
+
+- Id: PackId71
+  Label:
+    CH: 開黃腔
+    EN: 
+    JP: 
+
+- Id: PackId72
+  Label:
+    CH: 離開
+    EN: 
+    JP: 
+
+- Id: PackId73
+  Label:
+    CH: 繼續
+    EN: 
+    JP: 
+
+- Id: PackId74
+  Label:
+    CH: 害怕
+    EN: 
+    JP: 
+
+- Id: PackId75
+  Label:
+    CH: 安慰
+    EN: 
+    JP: 
+
+- Id: PackId76
+  Label:
+    CH: 請她脫衣服
+    EN: 
+    JP: 
+
+- Id: PackId77
+  Label:
+    CH: 讓她主導
+    EN: 
+    JP: 
+
+- Id: PackId78
+  Label:
+    CH: 請她加速
+    EN: 
+    JP: 
+
+- Id: PackId79
+  Label:
+    CH: 換個姿勢
+    EN: 
+    JP: 
+
+- Id: PackId80
+  Label:
+    CH: 射精
+    EN: 
+    JP: 
+
+- Id: PackId81
+  Label:
+    CH: 直接來
+    EN: 
+    JP: 
+
+- Id: PackId82
+  Label:
+    CH: 先按摩
+    EN: 
+    JP: 
+
+- Id: PackId83
+  Label:
+    CH: 可以幫我吃嗎？
+    EN: 
+    JP: 
+
+- Id: PackId84
+  Label:
+    CH: 讓我變這麼大妳要負責
+    EN: 
+    JP: 
+
+- Id: PackId85
+  Label:
+    CH: 加快速度
+    EN: 
+    JP: 
+
+- Id: PackId86
+  Label:
+    CH: 再刺激一點
+    EN: 
+    JP: 
+
+- Id: PackId87
+  Label:
+    CH: 就是愛按摩
+    EN: 
+    JP: 
+
+- Id: PackId88
+  Label:
+    CH: 討拍
+    EN: 
+    JP: 
+
+- Id: PackId89
+  Label:
+    CH: 任由她繼續
+    EN: 
+    JP: 
+
+- Id: PackId90
+  Label:
+    CH: 與她調情
+    EN: 
+    JP: 
+
+- Id: PackId91
+  Label:
+    CH: 好看，尤其是腿
+    EN: 
+    JP: 
+
+- Id: PackId92
+  Label:
+    CH: 妳穿什麼都好看
+    EN: 
+    JP: 
+
+- Id: PackId93
+  Label:
+    CH: 用腳幫我
+    EN: 
+    JP: 
+
+- Id: PackId94
+  Label:
+    CH: 繼續尻
+    EN: 
+    JP: 
+
+- Id: PackId95
+  Label:
+    CH: 加快速度
+    EN: 
+    JP: 
+
+- Id: PackId96
+  Label:
+    CH: 想要更刺激的
+    EN: 
+    JP: 
+
+- Id: PackId97
+  Label:
+    CH: 酒吧
+    EN: Bar
+    JP: バー
+
+- Id: PackId98
+  Label:
+    CH: 街邊鬧區
+    EN: Downtown
+    JP: 繁華街
+
+- Id: PackId99
+  Label:
+    CH: 按摩店
+    EN: Massage Parlor
+    JP: 風俗エステ
+
+- Id: PackId100
+  Label:
+    CH: 酒店
+    EN: Nightclub
+    JP: ナイトクラブ
+
+- Id: PackId101
+  Label:
+    CH: 芊芊
+    EN: Daisy
+    JP: リコ
+
+- Id: PackId102
+  Label:
+    CH: Gina
+    EN: Gina
+    JP: ジーナ
+
+- Id: PackId103
+  Label:
+    CH: 家家
+    EN: Mia
+    JP: ミサキ
+
+- Id: PackId104
+  Label:
+    CH: 真真
+    EN: Sophie
+    JP: シオリ
+
+- Id: PackId105
+  Label:
+    CH: 未未
+    EN: Bella
+    JP: ナオ
+
+- Id: PackId106
+  Label:
+    CH: 梓梓
+    EN: Zoe
+    JP: ホノカ
+
+- Id: PackId107
+  Label:
+    CH: 天晴
+    EN: Olivia
+    JP: カナ
+
+- Id: PackId108
+  Label:
+    CH: Julie
+    EN: Julie
+    JP: ジュリー
+
+- Id: PackId109
+  Label:
+    CH: 小晴
+    EN: Alice
+    JP: リン
+
+- Id: PackId110
+  Label:
+    CH: 薇拉
+    EN: Lily
+    JP: ルナ
+
+- Id: PackId111
+  Label:
+    CH: 佳妮
+    EN: Chloe
+    JP: ユイ
+
+- Id: PackId112
+  Label:
+    CH: 雙雙
+    EN: Layla
+    JP: ミユ
+
+- Id: PackId113
+  Label:
+    CH: 小恩
+    EN: Emma
+    JP: ナオミ
+
+- Id: PackId114
+  Label:
+    CH: 小綠
+    EN: Tessa
+    JP: ユナ
+
+- Id: PackId115
+  Label:
+    CH: 希希
+    EN: Cora
+    JP: レン
+
+- Id: PackId116
+  Label:
+    CH: 柔柔
+    EN: Nova
+    JP: ウタ
+
+- Id: PackId117
+  Label:
+    CH: 在路上相遇
+    EN: Crossing paths on the street
+    JP: 街角で偶然出会う
+
+- Id: PackId118
+  Label:
+    CH: 適合約會的晚上
+    EN: A perfect night for a date
+    JP: デートにぴったりの夜
+
+- Id: PackId119
+  Label:
+    CH: 平息紛爭
+    EN: Making peace
+    JP: 揉め事を解決する
+
+- Id: PackId120
+  Label:
+    CH: 爛醉的朋友
+    EN: A drunk mess of a friend
+    JP: ベロベロの友達
+
+- Id: PackId121
+  Label:
+    CH: 微醺之夜
+    EN: A tipsy night
+    JP: ほろ酔いの夜
+
+- Id: PackId122
+  Label:
+    CH: 都市夜景
+    EN: Urban nighscape
+    JP: 都会の夜景
+
+- Id: PackId123
+  Label:
+    CH: 酒局下半
+    EN: Round two of the drinking night
+    JP: 二次会の時間
+
+- Id: PackId124
+  Label:
+    CH: 節外生枝
+    EN: A twist in the plot
+    JP: 話がこじれる
+
+- Id: PackId125
+  Label:
+    CH: 歡迎回家
+    EN: Welcome home!
+    JP: お帰りなさい！
+
+- Id: PackId126
+  Label:
+    CH: 悠閒的夜間時光
+    EN: A chill night
+    JP: ゆったり夜時間
+
+- Id: PackId127
+  Label:
+    CH: 並不是情話才能使人動心
+    EN: It’s not just sweet words that touch the heart
+    JP: 愛の言葉だけが心を動かすわけじゃない
+
+- Id: PackId128
+  Label:
+    CH: 後宮佳麗三千
+    EN: A harem of countless beauties
+    JP: ハーレムに美女が溢れる
+
+- Id: PackId129
+  Label:
+    CH: 請多多指教
+    EN: Nice to meet you!
+    JP: よろしくお願いします！
+
+- Id: PackId130
+  Label:
+    CH: 一條龍服務
+    EN: One-stop service
+    JP: ワンストップサービス
+
+- Id: PackId131
+  Label:
+    CH: 魚與熊掌兼得
+    EN: Having the best of both worlds
+    JP: 二兎を追って二兎を得る
+
+- Id: PackId132
+  Label:
+    CH: 現在是誰在被我＿
+    EN: Who’s the one getting __ by me right now?
+    JP: 今、私に___されてるのは誰？
 
 - Id: PackId501
   Label:
@@ -51,7 +811,7 @@ Packs:
 
 - Id: PackId504
   Label:
-     CH: 背景音量
+     CH: 背景音樂
      EN: BGM Volume
      JP: BGM音量
 
@@ -105,73 +865,97 @@ Packs:
 
 - Id: PackId513
   Label:
-    CH: 確定離開
-    EN: SURE
+    CH: 確認
+    EN: Confirm
     JP: もちろん
 
 - Id: PackId514
   Label:
-    CH: 返回色色
-    EN: BACK
+    CH: 取消
+    EN: Cancel
     JP: 戻る
 
 - Id: PackId515
   Label:
-    CH: 您確定要離開宿舍？
+    CH: 是否選擇繼續離開？
     EN: Do you really want to leave?
     JP: 本当に離れますか？
 
 - Id: PackId516
   Label:
-    CH: 您確定要返回大廳？
+    CH: 是否選擇返回大廳？
     EN: Do you really want to back to Lobby?
     JP: 本当にロビーに戻りますか?
 
+- Id: PackId517
+  Label:
+    CH: 開始遊戲
+    EN: Start Game
+    JP: ゲーム開始
+
+- Id: PackId518
+  Label:
+    CH: 劇情分支
+    EN: Story Branch
+    JP: 分岐ルート
+
+- Id: PackId519
+  Label:
+    CH: 畫廊
+    EN: Gallery
+    JP: ギャラリー
+
+- Id: PackId520
+  Label:
+    CH: 離開遊戲
+    EN: Exit Game
+    JP: ゲーム終了
+
 - Id: PackId601
   Label:
-     CH: text_start_tw
-     EN: text_start_en
-     JP: text_start_jp
+     CH: icon_logo_tw
+     EN: icon_logo_en
+     JP: icon_logo_jp
 
 - Id: PackId602
   Label:
-     CH: text_gallery_tw
-     EN: text_gallery_en
-     JP: text_gallery_jp
+     CH: icon_failed_title_tw
+     EN: icon_failed_title_en
+     JP: icon_failed_title_jp
 
 - Id: PackId603
   Label:
-     CH: text_chapter_tw
-     EN: text_chapter_en
-     JP: text_chapter_jp
+     CH: icon_failed_tw
+     EN: icon_failed_en
+     JP: icon_failed_jp
 
 - Id: PackId604
   Label:
-     CH: text_setting_tw
-     EN: text_setting_en
-     JP: text_setting_jp
+     CH: icon_tip_tw
+     EN: icon_tip_en
+     JP: icon_tip_jp
 
 - Id: PackId605
   Label:
-     CH: test_quit_tw
-     EN: test_quit_en
-     JP: test_quit_jp
+     CH: icon_chap_hotel_tw
+     EN: icon_chap_hotel_en
+     JP: icon_chap_hotel_jp
 
 - Id: PackId606
   Label:
-     CH: text_ques_tw
-     EN: text_ques_en
-     JP: text_ques_jp
+     CH: icon_chap_pub_tw
+     EN: icon_chap_pub_en
+     JP: icon_chap_pub_jp
 
 - Id: PackId607
   Label:
-     CH: text_gameover_title_tw
-     EN: text_gameover_title_en
-     JP: text_gameover_title_en
+     CH: icon_chap_shop_tw
+     EN: icon_chap_shop_en
+     JP: icon_chap_shop_jp
 
 - Id: PackId608
   Label:
-     CH: text_gameover_tw
-     EN: text_gameover_en
-     JP: text_gameover_jp
+     CH: icon_chap_town_tw
+     EN: icon_chap_town_en
+     JP: icon_chap_town_jp
 
