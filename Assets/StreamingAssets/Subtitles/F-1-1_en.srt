@@ -1,0 +1,20 @@
+1
+00:00:00,325 --> 00:00:02,075
+You@So I'm curious what do you do?
+
+2
+00:00:03,675 --> 00:00:08,250
+Bella@Oh, I'm just an administrative back-office worker in a general company.
+
+3
+00:00:09,275 --> 00:00:11,250
+You@Is it the kind I usually hear?
+
+4
+00:00:12,175 --> 00:00:15,425
+Bella@Oh my job is boring. Let’s not talk about this.
+
+5
+00:00:15,775 --> 00:00:17,800
+You@Oh okay, I'll just ask casually
+

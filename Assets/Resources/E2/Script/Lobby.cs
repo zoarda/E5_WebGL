@@ -58,6 +58,11 @@ public class Lobby : MonoBehaviour
             // StartGamePage.SetActive(!StartGamePage.activeSelf);
             startNani.LobbyPage.SetActive(false);
             await Player.PreloadAndPlayAsync("F");
+            var sfx = Engine.GetService<IAudioManager>();
+            if (sfx != null)
+            {
+                await sfx.StopSfxAsync("GameStart", 0.2f);
+            }
             ICharacterManager actorManager = Engine.GetService<ICharacterManager>();
             actorManager.RemoveAllActors();
             NaniCommandManger.Instance.SpeedButtonClearSpawn();

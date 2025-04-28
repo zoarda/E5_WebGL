@@ -65,8 +65,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fff48ada193aedb4eafb78ee58316914, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 08b81f152e0bf4e4d96bc7fc196443f1, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -262,6 +262,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Txtcheck: {fileID: 4726728696738100599}
+  TxtGamequit: {fileID: 0}
+  TxtGameback: {fileID: 0}
+  check: 
+  quit: 
+  back: 
   Gamequit: {fileID: 1890467640256312423}
   Gameback: {fileID: 8571369471216693581}
 --- !u!1001 &2809917610399630057

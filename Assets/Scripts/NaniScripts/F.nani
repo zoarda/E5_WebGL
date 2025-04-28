@@ -91,7 +91,7 @@
 @waitMovie choiceTime:3
 @speedButtonDisable
 @spawn LovePlayPage
-@spawnLovePlayPage poseName:sex_I_01,sex_S_01,sex_J_01,sex_Q_01 label:F-4-2-O1,Test,Test,Test cumLabel:F-4-2-Q-C1 type:demoForPlay LabelCompany:sex_I_02,sex_S_02,sex_K_02,sex_Q_02
+@spawnLovePlayPage poseName:sex_I_01,sex_S_03,sex_J_03,sex_Q_03 label:F-4-2-O1,Test,Test,Test cumLabel:F-4-2-Q-C1 type:demoForPlay LabelCompany:sex_I_02,sex_S_02,sex_K_02,sex_Q_02
 @videoControll StartLoopTime:0 EndLoopTime:8 isLooping:true
 @stop
 #F-4-2-O1
@@ -102,7 +102,7 @@
 @EndMovie
 #F-4-2-Q-C1
 @spawn LovePlayPage
-@spawnLovePlayPage poseName:sex_D_01,sex_A_01,sex_C_01,sex_G_01,sex_F_01 label:F-4-2-S1,Test,Test,Test,Test cumLabel:S-2-S6 type:demo LabelCompany:sex_A_02,sex_F_02,sex_G_02,sex_E_02,sex_T_02
+@spawnLovePlayPage poseName:sex_D_01,sex_A_03,sex_C_03,sex_G_03,sex_F_03 label:F-4-2-S1,Test,Test,Test,Test cumLabel:S-2-S6 type:demo LabelCompany:sex_A_02,sex_F_02,sex_G_02,sex_E_02,sex_T_02
 @stop
 #F-4-2-S1
 @streamingPlay "F-4-2-S1"
@@ -110,9 +110,17 @@
 @forcedChoice choiceTime:3
 @waitMovie choiceTime:3
 @EndMovie
-@goto .F-4-2-S1-Q
-#F-4-2-S1-Q
+@goto .GameA
+; #F-4-2-S1-Q
+; @speedButtonDisable
+; @streamingPlay "F-4-2-S1-Q"
+; @videoControll StartLoopTime:0 EndLoopTime:8 isLooping:true
+; @stop
+
+#GameA
+# EndGameA
+@despawn LovePlayPage
+@spawn GameClearPage
+@gameClearBack confirmScript:S confirmLabel:null confirmText:PackId95  cancelScript:StartGame cancelLabel:null cancelText:PackId96  saying:PackId608 name:PackId102 cancel:PackId512 confirm:PackId511 imageTitle:PackId607
 @speedButtonDisable
-@streamingPlay "F-4-2-S1-Q"
-@videoControll StartLoopTime:0 EndLoopTime:8 isLooping:true
 @stop

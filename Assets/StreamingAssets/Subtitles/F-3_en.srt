@@ -1,0 +1,12 @@
+1
+00:00:00,350 --> 00:00:04,675
+Bella@Hey, I don’t want to leave yet. I’m not drunk yet.
+
+2
+00:00:05,200 --> 00:00:08,200
+You@No, it's going to be closed here.
+
+3
+00:00:09,075 --> 00:00:12,600
+Bella@Otherwise, where are we going now?
+

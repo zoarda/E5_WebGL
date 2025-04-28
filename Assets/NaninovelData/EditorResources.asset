@@ -183,3 +183,8 @@ MonoBehaviour:
       guid: 9a47a636da53bb1409b221883df1da8f
   - Id: Backgrounds/daa7dfce-50dd-4821-ba62-b04190246b24
     Resources: []
+  - Id: Audio
+    Resources:
+    - name: GameStart
+      pathPrefix: Audio
+      guid: 8402ac5785b6e0d4d8fd37a015baaa41

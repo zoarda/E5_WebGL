@@ -1,0 +1,32 @@
+1
+00:00:00,350 --> 00:00:02,775
+Bella@Wow, true or false
+
+2
+00:00:02,775 --> 00:00:04,700
+You@No more
+
+3
+00:00:05,875 --> 00:00:07,650
+You@Just kidding, I have a good memory.
+
+5
+00:00:09,050 --> 00:00:13,750
+You@Oh, no, I mean, I'm an innocent man who only dates the same people.
+
+6
+00:00:14,425 --> 00:00:17,050
+Bella@Wow, you say it yourself, you are not shy.
+
+7
+00:00:17,475 --> 00:00:19,725
+You@How could it be? What I told is all the truth.
+
+8
+00:00:19,850 --> 00:00:21,300
+Bella@Oh, is that so?
+
+9
+00:00:21,300 --> 00:00:22,275
+You@Of course it is
+

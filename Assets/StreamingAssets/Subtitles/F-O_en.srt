@@ -1,0 +1,48 @@
+1
+00:00:05,050 --> 00:00:07,175
+Bella@Hey, are you okay? You are vomiting.
+
+2
+00:00:07,475 --> 00:00:10,075
+You@No...it's okay. I drank too much.
+
+3
+00:00:10,400 --> 00:00:13,050
+Bella@Ah, you are really stupid. We only drank a case of beer.
+
+4
+00:00:13,850 --> 00:00:16,218
+You@Uh...a little drunk
+
+5
+00:00:17,825 --> 00:00:19,000
+Bella@Is it okay?
+
+6
+00:00:19,150 --> 00:00:19,900
+You@It's okay, it's okay
+
+7
+00:00:20,650 --> 00:00:21,850
+Bella@Are you still drinking?
+
+8
+00:00:22,825 --> 00:00:24,825
+You@Don't worry about it yet. Take a rest.
+
+9
+00:00:26,525 --> 00:00:28,650
+Bella@Then should I go get you some water?
+
+10
+00:00:30,975 --> 00:00:33,100
+You@It's okay, I can do it myself
+
+11
+00:00:33,425 --> 00:00:34,850
+Bella@make sure you really can
+
+12
+00:00:35,000 --> 00:00:36,500
+You@Um
+

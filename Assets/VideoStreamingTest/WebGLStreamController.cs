@@ -134,7 +134,7 @@ public class WebGLStreamController : HISPlayerManager
     public async UniTask LoadYaml()
     {
         try
-        {
+        {   
             nameToUrl = await YamlLoader.LoadStreamingAssetsYaml<NameToUrl>(Application.streamingAssetsPath + "/Yaml/URLToScence.yaml");
             Debug.Log("YAML 加載成功");
 
