@@ -1,39 +1,39 @@
 Packs:
 - Id: PackId1
   Label:
-    CH: 裝熟
-    EN: 
-    JP: 
+    CH: 聊工作
+    EN: Talk about work.
+    JP: 仕事の話をする
 
 - Id: PackId2
   Label:
-    CH: 說實話
-    EN: 
-    JP: 
+    CH: 聊寵物
+    EN: Talk about pets.
+    JP: ペットの話をする
 
 - Id: PackId3
   Label:
-    CH: 先喝酒
-    EN: 
-    JP: 
+    CH: 喝
+    EN: Drink.
+    JP: 飲む
 
 - Id: PackId4
   Label:
-    CH: 說情話
-    EN: 
-    JP: 
+    CH: 不喝
+    EN: Don't drink.
+    JP: 飲まない
 
 - Id: PackId5
   Label:
-    CH: 送回她家
-    EN: 
-    JP: 
+    CH: 拐彎抹角
+    EN: Beat around the bush.
+    JP: 遠回しに言う
 
 - Id: PackId6
   Label:
-    CH: 送回自己家
-    EN: 
-    JP: 
+    CH: 直話直說
+    EN: Be direct.
+    JP: はっきり言う
 
 - Id: PackId7
   Label:
@@ -151,39 +151,39 @@ Packs:
 
 - Id: PackId26
   Label:
-    CH: 聊工作
-    EN: Talk about work.
-    JP: 仕事の話をする
+    CH: 裝熟
+    EN: 
+    JP: 
 
 - Id: PackId27
   Label:
-    CH: 聊寵物
-    EN: Talk about pets.
-    JP: ペットの話をする
+    CH: 說實話
+    EN: 
+    JP: 
 
 - Id: PackId28
   Label:
-    CH: 喝
-    EN: Drink.
-    JP: 飲む
+    CH: 先喝酒
+    EN: 
+    JP: 
 
 - Id: PackId29
   Label:
-    CH: 不喝
-    EN: Don't drink.
-    JP: 飲まない
+    CH: 說情話
+    EN: 
+    JP: 
 
 - Id: PackId30
   Label:
-    CH: 拐彎抹角
-    EN: Beat around the bush.
-    JP: 遠回しに言う
+    CH: 送回她家
+    EN: 
+    JP: 
 
 - Id: PackId31
   Label:
-    CH: 直話直說
-    EN: Be direct.
-    JP: はっきり言う
+    CH: 送回自己家
+    EN: 
+    JP: 
 
 - Id: PackId32
   Label:

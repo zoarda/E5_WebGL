@@ -2341,6 +2341,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u96E2\u958B\u904A\u6232"
       objectReference: {fileID: 0}
+    - target: {fileID: 3515072621315541420, guid: e12be8a806d836b4d93a96462498d318, type: 3}
+      propertyPath: m_Text
+      value: ver 1.0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3966942749934888454, guid: e12be8a806d836b4d93a96462498d318, type: 3}
       propertyPath: m_Text
       value: "\u958B\u59CB\u904A\u6232"
@@ -3986,14 +3990,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 08b81f152e0bf4e4d96bc7fc196443f1, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5455,6 +5459,11 @@ MonoBehaviour:
   subtitlesManager: {fileID: 253769918}
   LanguageManager: {fileID: 2040531984}
   buttonController: {fileID: 2111764973}
+  Btn_C1_VB: {fileID: 0}
+  Btn_C2_VB: {fileID: 0}
+  Btn_C3_VB: {fileID: 0}
+  Btn_C4_VB: {fileID: 0}
+  Btn_C5_VB: {fileID: 0}
   Btn_SpeedViewBack: {fileID: 1651686600}
   Btn_ChoiceViewBack: {fileID: 1640166466}
   Btn_Option: {fileID: 317180046}
@@ -5486,6 +5495,7 @@ MonoBehaviour:
   languageIndex: 0
   lastChoiceName: 
   txtSubtitles: {fileID: 0}
+  isLoggedIn: 0
   toggles: []
   Language:
   - "\u4E2D\u6587"
