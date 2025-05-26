@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using Naninovel;
+using System.Threading.Tasks;
 
 public class GameSettingPage : MonoBehaviour
 {
@@ -149,6 +150,7 @@ public class GameSettingPage : MonoBehaviour
             languageManager.SetLanguage();
             languageManager.SetLanguageImage();
             SetSettingPageLanguage();
+            ChangeLanguage(99);
 
             tempBGMVolume = originalBGMVolume;
             tempSFXVolume = originalSFXVolume;
@@ -165,11 +167,9 @@ public class GameSettingPage : MonoBehaviour
         });
         Btn_Close.onClick.AddListener(() =>
         {
-            SubtitlesManager.Instance.LanguageCase = SubtitlesManager.Language.中文;
             languageManager.SetLanguage();
             languageManager.SetLanguageImage();
             SetSettingPageLanguage();
-
             tempBGMVolume = originalBGMVolume;
             tempSFXVolume = originalSFXVolume;
             tempVoiceVolume = originalVoiceVolume;
@@ -196,7 +196,7 @@ public class GameSettingPage : MonoBehaviour
         }
     }
 
-    private void SetSettingPageLanguage()
+    private async Task SetSettingPageLanguage()
     {
         LanguageManager languageManager = LanguageManager.Instance;
         TxtTitle.text = languageManager.GetLanguageValue(StrTitle);
@@ -210,6 +210,7 @@ public class GameSettingPage : MonoBehaviour
         TxtCH.text = languageManager.GetLanguageValue(StrCH);
         TxtSave.text = languageManager.GetLanguageValue(StrSave);
         TxtCancel.text = languageManager.GetLanguageValue(StrCancel);
+        await languageManager.Init();
     }
     private void AdjustVolume(AudioSource audioSource, float value)
     {
@@ -222,11 +223,20 @@ public class GameSettingPage : MonoBehaviour
     {
         StartNani startNani = StartNani.Instance;
         languageIndex = startNani.languageIndex;
-        languageIndex += direction;
 
-        // 確保 index 在 0~2 之間循環
-        if (languageIndex < 0) languageIndex = 2;
-        if (languageIndex > 2) languageIndex = 0;
+        // 🔁 如果 direction == 99，強制重設語言為中文（index 0）
+        if (direction == 99)
+        {
+            languageIndex = 0;
+        }
+        else
+        {
+            languageIndex += direction;
+
+            // 確保 index 在 0~2 之間循環
+            if (languageIndex < 0) languageIndex = 2;
+            if (languageIndex > 2) languageIndex = 0;
+        }
 
         switch (languageIndex)
         {
@@ -240,10 +250,10 @@ public class GameSettingPage : MonoBehaviour
                 SubtitlesManager.Instance.LanguageCase = SubtitlesManager.Language.英文;
                 break;
         }
+
         SetSettingPageLanguage();
         aniLanguageList.SetInteger("language", languageIndex);
         startNani.languageIndex = languageIndex;
-
     }
 
     private void UpdateButtonTransparency()

@@ -10,7 +10,7 @@ public class StartNani : MonoBehaviour
 {
     [Header("Page")]
 
-    public GameObject GalleryPage, LobbyPage,
+    public GameObject GalleryPage, LobbyPage,Map,
     VideoImage, ErrorPage, ChapterPage, OpenPage, CheckPage,
     InGameCheckPage, OptionPage, GameSettingPage, OpenPageCheck;
     public GameObject PreLanguageToggle, SelectOption, BlackBg, LanguageToggle;

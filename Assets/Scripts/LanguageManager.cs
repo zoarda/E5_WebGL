@@ -52,7 +52,15 @@ public class LanguageManager : MonoBehaviour
                 LanguageImage languageImage = imaitem.GetComponent<LanguageImage>();
                 if (languageImage != null)
                 {
-                    languageImage.image.sprite = Resources.Load<Sprite>("lobby/" + GetLanguageValue(languageImage.Id));
+                    languageImage.image.sprite = Resources.Load<Sprite>(GetLanguageValue(languageImage.Id));
+                    if (languageImage.image.sprite != null)
+                    {
+                        Debug.Log($"SetlanguageImage{languageImage.image.sprite}");
+                    }
+                    else
+                    {
+                        Debug.Log($"SetLanguageNotFound{languageImage.Id}");
+                    }
                 }
             }
         }
@@ -67,6 +75,8 @@ public class LanguageManager : MonoBehaviour
         try
         {
             languageBundle = await YamlLoader.LoadStreamingAssetsYaml<LanguageBundle>(Application.streamingAssetsPath + "/Yaml/OptionLanguage.yaml");
+            SetLanguage();
+            SetLanguageImage();
         }
         catch (System.Exception e)
         {
@@ -92,7 +102,7 @@ public class LanguageManager : MonoBehaviour
         var pack = bundle.Packs.FirstOrDefault(i => i.Id == id);
         if (pack == null)
         {
-            Debug.Log($"pack not found.");
+            Debug.Log($"pack not found{id}");
             return null;
         }
 

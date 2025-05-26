@@ -53,19 +53,20 @@ public class Lobby : MonoBehaviour
             // AudioManager.instance.PlaySFX("Up");
             // OpenPage.SetActive(true);
 
-            CanvasGroup canvasGroup = StartNani.Instance.VideoImage.GetComponent<CanvasGroup>();
-            canvasGroup.alpha = 1;
-            // StartGamePage.SetActive(!StartGamePage.activeSelf);
+            //修改為先開啟map再透過map開啟對應章節
+            startNani.Map.SetActive(true);
+            // CanvasGroup canvasGroup = StartNani.Instance.VideoImage.GetComponent<CanvasGroup>();
+            // canvasGroup.alpha = 1;
             startNani.LobbyPage.SetActive(false);
-            await Player.PreloadAndPlayAsync("F");
-            var sfx = Engine.GetService<IAudioManager>();
-            if (sfx != null)
-            {
-                await sfx.StopSfxAsync("GameStart", 0.2f);
-            }
-            ICharacterManager actorManager = Engine.GetService<ICharacterManager>();
-            actorManager.RemoveAllActors();
-            NaniCommandManger.Instance.SpeedButtonClearSpawn();
+            // await Player.PreloadAndPlayAsync("F");
+            // var sfx = Engine.GetService<IAudioManager>();
+            // if (sfx != null)
+            // {
+            //     await sfx.StopSfxAsync("GameStart", 0.2f);
+            // }
+            // ICharacterManager actorManager = Engine.GetService<ICharacterManager>();
+            // actorManager.RemoveAllActors();
+            // NaniCommandManger.Instance.SpeedButtonClearSpawn();
             // EventSystem.current.SetSelectedGameObject(Btn_Option.gameObject);
         });
         Btn_Gallery.onClick.AddListener(() =>

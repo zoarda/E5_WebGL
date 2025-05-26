@@ -1,39 +1,39 @@
 Packs:
 - Id: PackId1
   Label:
-    CH: 聊工作
-    EN: Talk about work.
-    JP: 仕事の話をする
+    CH: 裝熟
+    EN: 
+    JP: 
 
 - Id: PackId2
   Label:
-    CH: 聊寵物
-    EN: Talk about pets.
-    JP: ペットの話をする
+    CH: 說實話
+    EN: 
+    JP: 
 
 - Id: PackId3
   Label:
-    CH: 喝
-    EN: Drink.
-    JP: 飲む
+    CH: 先喝酒
+    EN: 
+    JP: 
 
 - Id: PackId4
   Label:
-    CH: 不喝
-    EN: Don't drink.
-    JP: 飲まない
+    CH: 說情話
+    EN: 
+    JP: 
 
 - Id: PackId5
   Label:
-    CH: 拐彎抹角
-    EN: Beat around the bush.
-    JP: 遠回しに言う
+    CH: 送回她家
+    EN: 
+    JP: 
 
 - Id: PackId6
   Label:
-    CH: 直話直說
-    EN: Be direct.
-    JP: はっきり言う
+    CH: 送回自己家
+    EN: 
+    JP: 
 
 - Id: PackId7
   Label:
@@ -151,39 +151,39 @@ Packs:
 
 - Id: PackId26
   Label:
-    CH: 裝熟
-    EN: 
-    JP: 
+    CH: 聊工作
+    EN: Talk about work.
+    JP: 仕事の話をする
 
 - Id: PackId27
   Label:
-    CH: 說實話
-    EN: 
-    JP: 
+    CH: 聊寵物
+    EN: Talk about pets.
+    JP: ペットの話をする
 
 - Id: PackId28
   Label:
-    CH: 先喝酒
-    EN: 
-    JP: 
+    CH: 喝
+    EN: Drink.
+    JP: 飲む
 
 - Id: PackId29
   Label:
-    CH: 說情話
-    EN: 
-    JP: 
+    CH: 不喝
+    EN: Don't drink.
+    JP: 飲まない
 
 - Id: PackId30
   Label:
-    CH: 送回她家
-    EN: 
-    JP: 
+    CH: 拐彎抹角
+    EN: Beat around the bush.
+    JP: 遠回しに言う
 
 - Id: PackId31
   Label:
-    CH: 送回自己家
-    EN: 
-    JP: 
+    CH: 直話直說
+    EN: Be direct.
+    JP: はっきり言う
 
 - Id: PackId32
   Label:
@@ -913,49 +913,81 @@ Packs:
 
 - Id: PackId601
   Label:
-     CH: icon_logo_tw
-     EN: icon_logo_en
-     JP: icon_logo_jp
+     CH: lobby/icon_logo_tw
+     EN: lobby/icon_logo_en
+     JP: lobby/icon_logo_jp
 
 - Id: PackId602
   Label:
-     CH: icon_failed_title_tw
-     EN: icon_failed_title_en
-     JP: icon_failed_title_jp
+     CH: GameOver/icon_failed_title_tw
+     EN: GameOver/icon_failed_title_en
+     JP: GameOver/icon_failed_title_jp
 
 - Id: PackId603
   Label:
-     CH: icon_failed_tw
-     EN: icon_failed_en
-     JP: icon_failed_jp
+     CH: GameOver/icon_failed_tw
+     EN: GameOver/icon_failed_en
+     JP: GameOver/icon_failed_jp
 
 - Id: PackId604
   Label:
-     CH: icon_tip_tw
-     EN: icon_tip_en
-     JP: icon_tip_jp
+     CH: GameOver/icon_tip_tw
+     EN: GameOver/icon_tip_en
+     JP: GameOver/icon_tip_jp
 
 - Id: PackId605
   Label:
-     CH: icon_chap_hotel_tw
-     EN: icon_chap_hotel_en
-     JP: icon_chap_hotel_jp
+     CH: chapter/icon_chap_hotel_tw
+     EN: chapter/icon_chap_hotel_en
+     JP: chapter/icon_chap_hotel_jp
 
 - Id: PackId606
   Label:
-     CH: icon_chap_pub_tw
-     EN: icon_chap_pub_en
-     JP: icon_chap_pub_jp
+     CH: chapter/icon_chap_pub_tw
+     EN: chapter/icon_chap_pub_en
+     JP: chapter/icon_chap_pub_jp
 
 - Id: PackId607
   Label:
-     CH: icon_chap_shop_tw
-     EN: icon_chap_shop_en
-     JP: icon_chap_shop_jp
+     CH: chapter/icon_chap_shop_tw
+     EN: chapter/icon_chap_shop_en
+     JP: chapter/icon_chap_shop_jp
 
 - Id: PackId608
   Label:
-     CH: icon_chap_town_tw
-     EN: icon_chap_town_en
-     JP: icon_chap_town_jp
+     CH: GameSetting/icon_chap_town_tw
+     EN: GameSetting/icon_chap_town_en
+     JP: GameSetting/icon_chap_town_jp
+
+- Id: PackId609
+  Label:
+     CH: GameSetting/icon_set_title_tw
+     EN: GameSetting/icon_set_title_en
+     JP: GameSetting/icon_set_title_jp
+
+- Id: PackId610
+  Label:
+     CH: GameSetting/icon_set_bgm_tw
+     EN: GameSetting/icon_set_bgm_en
+     JP: GameSetting/icon_set_bgm_jp
+
+- Id: PackId611
+  Label:
+     CH: GameSetting/icon_set_sfx_tw
+     EN: GameSetting/icon_set_sfx_en
+     JP: GameSetting/icon_set_sfx_jp
+
+- Id: PackId612
+  Label:
+     CH: GameSetting/icon_set_voice_tw
+     EN: GameSetting/icon_set_voice_en
+     JP: GameSetting/icon_set_voice_jp
+
+- Id: PackId613
+  Label:
+     CH: GameSetting/icon_set_lang_tw
+     EN: GameSetting/icon_set_lang_en
+     JP: GameSetting/icon_set_lang_jp
+
+
 
