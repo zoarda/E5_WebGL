@@ -117,7 +117,7 @@
 
 #F-4-2-Q-C1
 @spawn LovePlayPage
-@spawnLovePlayPage poseName:sex_D_01,sex_A_03,sex_C_03,sex_G_03,sex_F_03 label:F-4-2-S1,Test,Test,Test,Test cumLabel:S-2-S6 type:demo LabelCompany:sex_A_02,sex_F_02,sex_G_02,sex_E_02,sex_T_02
+@spawnLovePlayPage poseName:sex_E_02,sex_A_03,sex_C_03,sex_G_03,sex_F_03 label:F-4-2-S1,Test,Test,Test,Test cumLabel:S-2-S6 type:demo LabelCompany:sex_A_02,sex_F_02,sex_G_02,sex_E_02,sex_T_02
 @stop
 #F-4-2-S1
 @streamingPlay "F-4-2-S1"

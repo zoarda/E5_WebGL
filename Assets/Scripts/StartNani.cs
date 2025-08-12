@@ -196,7 +196,11 @@ public class StartNani : MonoBehaviour
             OpenPage.SetActive(true);
             OpenPageCheck.SetActive(false);
         });
-
+        var sfx = Engine.GetService<IAudioManager>();
+        if (sfx != null)
+        {
+            await sfx.PlayBgmAsync("GameStart", 0.2f, 0.5f, true);
+        }
         //設定影片控制顯示
         buttonController.onClick.AddListener(() =>
         {

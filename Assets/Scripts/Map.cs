@@ -12,6 +12,7 @@ public class Map : MonoBehaviour
         var Player = Engine.GetService<IScriptPlayer>();
         BtnCh1.onClick.AddListener(async () =>
         {
+            startNani.OpenPage.SetActive(true);
             CanvasGroup canvasGroup = StartNani.Instance.VideoImage.GetComponent<CanvasGroup>();
             canvasGroup.alpha = 1;
             startNani.Map.SetActive(false);

@@ -1,0 +1,21 @@
+chapters:
+  C1:
+    image: "Images/Chapter1.png"
+    nextChapter: "Chapter1"
+    title: "開始冒險"
+    description: "這是第一章的故事..."
+  C2:
+    image: "Images/Chapter2.png"
+    nextChapter: "Chapter2"
+    title: "進入森林"
+    description: "這是第二章的故事..."
+  C3:
+    image: "Images/Chapter3.png"
+    nextChapter: "Chapter3"
+    title: "遭遇敵人"
+    description: "這是第三章的故事..."
+  C4:
+    image: "Images/Chapter4.png"
+    nextChapter: "Chapter4"
+    title: "終局"
+    description: "這是最後一章的故事..."

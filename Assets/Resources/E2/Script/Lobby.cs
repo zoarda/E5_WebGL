@@ -14,6 +14,7 @@ public class Lobby : MonoBehaviour
 
     WebGLStreamController webGLStreamController;
     private static readonly object lockObj = new object();
+    [SerializeField] private string url;
     private static Lobby instance;
     public static Lobby Instance
     {
@@ -86,5 +87,10 @@ public class Lobby : MonoBehaviour
             GameSettingPage gameSettingPage = GameSettingPage.Instance;
             gameSettingPage.Init();
         });
+        Btn_Question.onClick.AddListener(() =>
+{
+    Application.OpenURL(url);
+    Debug.Log($"openUrl{url}");
+});
     }
 }

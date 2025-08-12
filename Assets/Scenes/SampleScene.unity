@@ -1983,7 +1983,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &677093982
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2457,6 +2457,14 @@ PrefabInstance:
     - target: {fileID: 2122934940924069636, guid: e12be8a806d836b4d93a96462498d318, type: 3}
       propertyPath: m_Name
       value: Lobby
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515072621315541420, guid: e12be8a806d836b4d93a96462498d318, type: 3}
+      propertyPath: m_Text
+      value: ver 1.0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7070652674493912571, guid: e12be8a806d836b4d93a96462498d318, type: 3}
+      propertyPath: url
+      value: https://www.surveycake.com/s/3l4wR
       objectReference: {fileID: 0}
     - target: {fileID: 7615144938421720127, guid: e12be8a806d836b4d93a96462498d318, type: 3}
       propertyPath: m_Pivot.x
@@ -2981,7 +2989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5370028927207608556, guid: 691812056c51fe747af8c5071cdb7a7a, type: 3}
       propertyPath: multiStreamProperties.Array.data[0].url.Array.data[0]
-      value: https://1001732524888-cloudfront-8nkhw4mg.d-apm.com/hls/36a59bf1-95fd-4072-bb65-13cfa157cc6c.mp4/36a59bf1-95fd-4072-bb65-13cfa157cc6c.m3u8
+      value: https://zhuanma.eidol.tw/video/m3u8/54affb3c/index.m3u8
       objectReference: {fileID: 0}
     - target: {fileID: 5370028927207608556, guid: 691812056c51fe747af8c5071cdb7a7a, type: 3}
       propertyPath: multiStreamProperties.Array.data[0].url.Array.data[1]
@@ -3658,34 +3666,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1084636879}
     m_Modifications:
-    - target: {fileID: 1304260245221600494, guid: 9c2d0a1a54c2660458219f4fcbbb0e00, type: 3}
-      propertyPath: back
-      value: PackId514
-      objectReference: {fileID: 0}
-    - target: {fileID: 1304260245221600494, guid: 9c2d0a1a54c2660458219f4fcbbb0e00, type: 3}
-      propertyPath: quit
-      value: PackId513
-      objectReference: {fileID: 0}
-    - target: {fileID: 1304260245221600494, guid: 9c2d0a1a54c2660458219f4fcbbb0e00, type: 3}
-      propertyPath: check
-      value: PackId516
-      objectReference: {fileID: 0}
-    - target: {fileID: 1304260245221600494, guid: 9c2d0a1a54c2660458219f4fcbbb0e00, type: 3}
-      propertyPath: TxtGameback
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1304260245221600494, guid: 9c2d0a1a54c2660458219f4fcbbb0e00, type: 3}
-      propertyPath: TxtGamequit
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3517062869313507646, guid: 9c2d0a1a54c2660458219f4fcbbb0e00, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: f2f2914f155c5fe46b2fc6219247eb9e, type: 3}
-    - target: {fileID: 5518142802178735983, guid: 9c2d0a1a54c2660458219f4fcbbb0e00, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: f2f2914f155c5fe46b2fc6219247eb9e, type: 3}
     - target: {fileID: 563089972275794291, guid: 7b446ada850eb3d49b12120bcb114650, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3766,17 +3746,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3048582725670446837, guid: 7b446ada850eb3d49b12120bcb114650, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: f2f2914f155c5fe46b2fc6219247eb9e, type: 3}
     - target: {fileID: 6261736179419778394, guid: 7b446ada850eb3d49b12120bcb114650, type: 3}
       propertyPath: m_Name
       value: wnd_game_check
-      objectReference: {fileID: 0}
-    - target: {fileID: 6261736179419778394, guid: 7b446ada850eb3d49b12120bcb114650, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6195,26 +6167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6014369319904922840, guid: fde19a27dd54afa48b6b5565221592f5, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: f2f2914f155c5fe46b2fc6219247eb9e, type: 3}
-    - target: {fileID: 6754934405833079226, guid: fde19a27dd54afa48b6b5565221592f5, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: f2f2914f155c5fe46b2fc6219247eb9e, type: 3}
     - target: {fileID: 7054109092391540005, guid: fde19a27dd54afa48b6b5565221592f5, type: 3}
       propertyPath: m_Name
       value: wnd_lobby_check
       objectReference: {fileID: 0}
-    - target: {fileID: 7054109092391540005, guid: fde19a27dd54afa48b6b5565221592f5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7699091665460383267, guid: fde19a27dd54afa48b6b5565221592f5, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: f2f2914f155c5fe46b2fc6219247eb9e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
